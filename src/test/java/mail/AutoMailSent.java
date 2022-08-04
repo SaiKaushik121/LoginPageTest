@@ -47,7 +47,7 @@ public class AutoMailSent
 
 							protected PasswordAuthentication getPasswordAuthentication() {
 
-							return new PasswordAuthentication("sair37206@gmail.com","mkvoytrzaawfzelu");
+							return new PasswordAuthentication("your email","password");
 
 							}
 
@@ -59,13 +59,13 @@ public class AutoMailSent
 					Message message = new MimeMessage(session);
 
 					// Set the from address
-					message.setFrom(new InternetAddress("sair37206@gmail.com"));
+					message.setFrom(new InternetAddress(" enter from address"));
 
 					// Set the recipient address
 					// here using cc for adding multiple people
 					
-					message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("sridharakaushik666@gmail.com"));
-					message.setRecipients(Message.RecipientType.CC,InternetAddress.parse("sridharasaikaushik@gmail.com"));
+					message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("enter to address"));
+					message.setRecipients(Message.RecipientType.CC,InternetAddress.parse("enter cc address"));
 					
 		  
 		            // Add the subject link
